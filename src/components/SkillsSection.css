@@ -1,0 +1,80 @@
+/* ===================================
+   Skills Section Styles
+   =================================== */
+
+.skills {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.skills__container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.skills__subtitle {
+  color: hsl(var(--muted-foreground));
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Skills grid */
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+/* Individual skill card - glow card style */
+.skills__card {
+  background: hsl(var(--card));
+  border-radius: 0.75rem;
+  border: 1px solid hsl(var(--border));
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: default;
+  transition: all 0.3s ease;
+}
+
+.skills__card:hover {
+  border-color: hsla(var(--primary), 0.5);
+  box-shadow: 0 0 30px hsla(var(--glow-cyan), 0.15);
+  transform: translateY(-4px);
+}
+
+/* Icon colors */
+.skills__icon--primary {
+  color: hsl(var(--primary));
+}
+
+.skills__icon--secondary {
+  color: hsl(var(--secondary));
+}
+
+.skills__name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: hsl(var(--foreground));
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+  .skills__container { padding: 0 1.5rem; }
+  .skills__grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 768px) {
+  .skills__grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .skills__container { padding: 0 2rem; }
+  .skills__grid { grid-template-columns: repeat(6, 1fr); }
+}

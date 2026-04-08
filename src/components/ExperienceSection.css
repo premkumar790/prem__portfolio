@@ -1,0 +1,167 @@
+/* ===================================
+   Experience Section Styles
+   =================================== */
+
+.experience {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.experience__container {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.experience__subtitle {
+  color: hsl(var(--muted-foreground));
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Timeline */
+.experience__timeline {
+  position: relative;
+}
+
+/* Timeline vertical line */
+.experience__line {
+  position: absolute;
+  left: 2rem;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, hsl(var(--primary)), hsl(var(--secondary)), hsla(var(--primary), 0.2));
+}
+
+/* Timeline item */
+.experience__item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+/* Timeline dot */
+.experience__dot {
+  position: absolute;
+  left: 2rem;
+  transform: translateX(-50%);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: hsl(var(--primary));
+  box-shadow: 0 0 15px hsla(var(--glow-cyan), 0.3), 0 0 30px hsla(var(--glow-purple), 0.15);
+  z-index: 10;
+  margin-top: 1.5rem;
+}
+
+/* Card wrapper */
+.experience__card-wrap {
+  margin-left: 4rem;
+  width: 100%;
+}
+
+/* Glow card */
+.experience__card {
+  background: hsl(var(--card));
+  border-radius: 0.75rem;
+  border: 1px solid hsl(var(--border));
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.experience__card:hover {
+  border-color: hsla(var(--primary), 0.5);
+  box-shadow: 0 0 30px hsla(var(--glow-cyan), 0.15);
+  transform: translateY(-4px);
+}
+
+.experience__header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience__icon {
+  color: hsl(var(--primary));
+}
+
+.experience__year {
+  font-size: 0.75rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: hsl(var(--primary));
+}
+
+.experience__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+}
+
+.experience__company {
+  font-size: 0.875rem;
+  color: hsl(var(--secondary));
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.experience__description {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.experience__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.experience__tag {
+  font-size: 0.75rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  background: hsla(var(--primary), 0.1);
+  color: hsl(var(--primary));
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Responsive - Desktop timeline layout */
+@media (min-width: 640px) {
+  .experience__container { padding: 0 1.5rem; }
+}
+
+@media (min-width: 768px) {
+  .experience__line {
+    left: 50%;
+  }
+  .experience__dot {
+    left: 50%;
+  }
+  .experience__item {
+    flex-direction: row;
+  }
+  .experience__item--reverse {
+    flex-direction: row-reverse;
+  }
+  .experience__card-wrap {
+    margin-left: 0;
+    width: 45%;
+  }
+  .experience__item:not(.experience__item--reverse) .experience__card-wrap {
+    padding-right: 3rem;
+  }
+  .experience__item--reverse .experience__card-wrap {
+    padding-left: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .experience__container { padding: 0 2rem; }
+}

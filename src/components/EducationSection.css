@@ -1,0 +1,113 @@
+/* ===================================
+   Education Section Styles
+   =================================== */
+
+.education {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.education__container {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.education__subtitle {
+  color: hsl(var(--muted-foreground));
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.education__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Education card */
+.education__card {
+  background: hsl(var(--card));
+  border-radius: 0.75rem;
+  border: 1px solid hsl(var(--border));
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.education__card:hover {
+  border-color: hsla(var(--primary), 0.5);
+  box-shadow: 0 0 30px hsla(var(--glow-cyan), 0.15);
+  transform: translateY(-4px);
+}
+
+.education__row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+/* Icon container */
+.education__icon-wrap {
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, hsla(var(--primary), 0.2), hsla(var(--secondary), 0.2));
+  flex-shrink: 0;
+}
+
+.education__icon {
+  color: hsl(var(--primary));
+}
+
+.education__degree {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+}
+
+.education__institution {
+  font-size: 0.875rem;
+  color: hsl(var(--secondary));
+  font-weight: 500;
+}
+
+.education__year {
+  font-size: 0.75rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: hsl(var(--primary));
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.education__description {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.education__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.education__tag {
+  font-size: 0.75rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  background: hsla(var(--primary), 0.1);
+  color: hsl(var(--primary));
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+  .education__container { padding: 0 1.5rem; }
+}
+
+@media (min-width: 1024px) {
+  .education__container { padding: 0 2rem; }
+}
