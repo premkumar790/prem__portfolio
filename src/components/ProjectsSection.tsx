@@ -11,18 +11,18 @@ const projects = [
   //   github: "#",
   //   live: "#",
   // },
-  // {
-  //   title: "E-Commerce Dashboard",
-  //   description: "Full-featured admin dashboard with analytics, inventory management, and real-time sales tracking.",
-  //   tech: ["React", "TypeScript", "Tailwind", "Recharts"],
-  //   github: "#",
-  //   live: "#",
-  // },
+  {
+    title: "Tic-Tac-Toc",
+    description: "Basic tic tac toc game ",
+    tech: ["HTML", "CSS", "JavaScript",],
+    github: "https://github.com/premkumar790",
+    live: "https://premkumar790.github.io/Tic-Tac-Toc/",
+  },
   {
     title: "Portfolio Generator",
     description: "Dynamic portfolio builder that creates stunning developer portfolios from JSON configuration files.",
     tech: ["Next.js", "MDX", "Framer Motion"],
-    github: "#",
+    github: "https://github.com/premkumar790",
     live: "#",
   },
   // {
@@ -36,14 +36,14 @@ const projects = [
     title: "Weather Forecast App",
     description: "Beautiful weather application with 7-day forecasts, interactive maps, and location-based alerts.",
     tech: ["React", "OpenWeather API", "Mapbox"],
-    github: "#",
+    github: "https://github.com/premkumar790",
     live: "#",
   },
   {
     title: "Blog Platform",
     description: "Full-stack blog platform with markdown support, comments, user authentication, and SEO optimization.",
     tech: ["React", "Node.js", "MongoDB", "JWT"],
-    github: "#",
+    github: "https://github.com/premkumar790",
     live: "#",
   },
 ];
