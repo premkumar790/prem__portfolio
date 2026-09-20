@@ -36,7 +36,8 @@ const SkillsSection = () => {
       <div className="skills__container">
         <motion.div ref={ref} initial={{ opacity: 0, y: 40 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }}>
           <h2 className="section-heading">Skills</h2>
-          <p className="skills__subtitle">Technologies & tools I work with</p>
+          <p className="skills__subtitle">Technologies and tools I use to analyze data and uncover meaningful insights
+</p>
 
           <div className="skills__grid">
             {skills.map((skill, i) => (
