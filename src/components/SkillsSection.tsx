@@ -1,25 +1,32 @@
 import { motion } from "framer-motion";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import {
-  Code2, FileJson, Palette, Globe, Server, GitBranch,
-  Database, Terminal, Figma, Smartphone, Cpu, Layers,
+   Code2,
+  Database,
+  Calculator,
+  FileSpreadsheet,
+  BarChart3,
+  LineChart,
+  Filter,
+  PieChart,
+  GitBranch,
 } from "lucide-react";
 import "./SkillsSection.css";
 
-const skills = [
-  { name: "HTML5", icon: Globe, color: "skills__icon--primary" },
-  { name: "CSS3", icon: Palette, color: "skills__icon--secondary" },
-  { name: "JavaScript", icon: FileJson, color: "skills__icon--primary" },
-  { name: "React.js", icon: Code2, color: "skills__icon--secondary" },
-  { name: "TypeScript", icon: Layers, color: "skills__icon--primary" },
-  { name: "Node.js", icon: Server, color: "skills__icon--secondary" },
-  { name: "Git & GitHub", icon: GitBranch, color: "skills__icon--primary" },
-  // { name: "MongoDB", icon: Database, color: "skills__icon--secondary" },
-  { name: "Tailwind CSS", icon: Terminal, color: "skills__icon--primary" },
-  // { name: "Figma", icon: Figma, color: "skills__icon--secondary" },
-  // { name: "React Native", icon: Smartphone, color: "skills__icon--primary" },
-  { name: "Python", icon: Cpu, color: "skills__icon--secondary" },
+
+  const skills = [
+{ name: "Python", icon: Code2, color: "skills__icon--primary" },
+{ name: "Pandas", icon: Database, color: "skills__icon--secondary" },
+{ name: "NumPy", icon: Calculator, color: "skills__icon--primary" },
+{ name: "SQL", icon: Database, color: "skills__icon--secondary" },
+{ name: "Excel", icon: FileSpreadsheet, color: "skills__icon--primary" },
+{ name: "Power BI", icon: BarChart3, color: "skills__icon--secondary" },
+{ name: "Matplotlib", icon: LineChart, color: "skills__icon--primary" },
+{ name: "Data Cleaning", icon: Filter, color: "skills__icon--secondary" },
+{ name: "Data Visualization", icon: PieChart, color: "skills__icon--primary" },
+{ name: "Git & GitHub", icon: GitBranch, color: "skills__icon--secondary" },
 ];
+
 
 const SkillsSection = () => {
   const { ref, isInView } = useScrollReveal();
