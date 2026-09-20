@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-import profileImg from "@/assets/prem_portfolio/src/assets/ProfileImage.jpeg";
+import profileImg from "/prem_portfolio/src/assets/ProfileImage.jpeg";
 import "./AboutSection.css";
 
 const AboutSection = () => {
