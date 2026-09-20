@@ -11,7 +11,7 @@ const AboutSection = () => {
       <div className="about__container">
         <motion.div ref={ref} initial={{ opacity: 0, y: 40 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }}>
           <h2 className="section-heading">About Me</h2>
-          <p className="about__subtitle">Get to know the developer behind the code</p>
+          <p className="about__subtitle">Get to know the Data Analyst turning data into meaningful insights</p>
 
           <div className="about__grid">
             <div className="about__img-wrap">
@@ -23,24 +23,23 @@ const AboutSection = () => {
 
             <div className="about__text">
               <p>
-                I'm <span className="gradient-text">Prem Kumar</span>, a passionate web developer and final-year 
-                Computer Science student with a strong focus on building modern, scalable, and user-friendly web applications.
+                I'm <span className="gradient-text">Prem Kumar</span>, A passionate Data Analyst and final-year BCA student with a strong focus on turning raw data into meaningful insights through data cleaning, analysis, visualization, and business-focused reporting.
+
               </p>
               <p>
-                I specialize in front-end development with React.js, crafting responsive interfaces that deliver 
-                exceptional user experiences. My toolkit also includes Node.js, TypeScript, and various modern web technologies.
+                I specialize in data analysis using Python, Pandas, NumPy, SQL, Excel, and Power BI, working with raw datasets to clean, explore, analyze, and visualize data. I focus on finding meaningful patterns, generating actionable insights, and presenting data through clear and interactive dashboards.
+
               </p>
               <p>
-                Currently in my final year of studies, I'm actively seeking opportunities in the tech industry 
-                where I can leverage my skills in full-stack development and AI-powered solutions to build 
-                products that make a meaningful impact.
+               Currently in my final year of BCA, I’m actively seeking opportunities as a Data Analyst where I can apply my skills in Python, SQL, Excel, and Power BI to analyze data, uncover meaningful insights, and support data-driven business decisions. I’m eager to learn, grow, and contribute to real-world data projects.
+
               </p>
               <div className="about__stats">
                 {[
                   { label: "Projects", value: "5+" },
                   { label: "Technologies", value: "6+" },
                   { label: "Experience", value: "Fresher" },
-                  { label: "Certifications", value: "1+" },
+                  { label: "Certifications", value: "3+" },
                 ].map((s) => (
                   <div key={s.label} className="about__stat-card">
                     <p className="about__stat-value">{s.value}</p>

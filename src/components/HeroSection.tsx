@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Download, FolderOpen } from "lucide-react";
 import TypeWriter from "./TypeWriter";
-import profileImg from "@/assets/profile.jpg";
+import profileImg from "@/assets/ProfileImage.jpeg";
 import "./HeroSection.css";
 
 const HeroSection = () => {
@@ -28,17 +28,18 @@ const HeroSection = () => {
             <div className="hero__typewriter-wrap">
               <TypeWriter
                 texts={[
-                  "Web Developer",
-                  "Front-End Enthusiast",
-                  "AI-Powered Builder",
-                  "React Specialist",
+                  "Aspiring Data Analyst",
+                  "Python & SQL Enthusiast",
+                  "Power BI Developer",
+                  "Data Analytics Enthusiast",
                 ]}
               />
             </div>
             <p className="hero__description">
-              Passionate full-stack developer crafting elegant, high-performance web experiences. 
-              Specializing in React, modern JavaScript, and AI-powered applications that push 
-              the boundaries of what's possible on the web.
+              Aspiring Data Analyst passionate about turning raw data into meaningful insights.
+Skilled in Python, SQL, Excel, and Power BI, with a focus on data cleaning, visualization,
+and building interactive dashboards that support data-driven decisions.
+
             </p>
             <div className="hero__buttons">
               <a href="Prem-Resume.pdf" download="Prem_Kumar_CV.pdf">
