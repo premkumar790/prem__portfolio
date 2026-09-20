@@ -53,6 +53,13 @@ const HeroSection = () => {
               >
                 <FolderOpen size={18} /> View Projects
               </button>
+
+               {/* <button
+    className="gradient-btn"
+    onClick={() => window.open("https://api.vapi.ai/call/YOUR_AGENT_ID", "_blank")}
+  >
+    🤖 Call My AI Agent
+  </button> */}
             </div>
           </motion.div>
 
